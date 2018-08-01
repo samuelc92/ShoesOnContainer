@@ -7,3 +7,8 @@ This project is based in a course from Udemy that is called ASP.NET CORE 2.0 E-C
 * Docker
 * Docker Compose
 * MediatR
+
+## Database
+
+* SQL Server
+* Redis
