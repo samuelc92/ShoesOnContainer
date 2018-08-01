@@ -7,8 +7,7 @@ namespace CartApi.Controllers
         // GET
         public IActionResult Index()
         {
-            return
-            View();
+            return new RedirectResult("~/swagger/ui");
         }
     }
 }

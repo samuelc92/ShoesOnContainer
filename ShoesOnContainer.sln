@@ -1,8 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01814E3F-54B3-4986-804A-7940D525B55C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FA233630-784F-4971-960C-EA11AE953ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogApi", "ProductCatalogApi\ProductCatalogApi.csproj", "{0347A239-F824-47E7-9B56-87D1372165C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartApi", "CartApi\CartApi.csproj", "{80D77925-D0D3-4C78-90E3-E0C5849B631F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA233630-784F-4971-960C-EA11AE953ABC} = {01814E3F-54B3-4986-804A-7940D525B55C}
+		{0347A239-F824-47E7-9B56-87D1372165C6} = {FA233630-784F-4971-960C-EA11AE953ABC}
+		{80D77925-D0D3-4C78-90E3-E0C5849B631F} = {FA233630-784F-4971-960C-EA11AE953ABC}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0347A239-F824-47E7-9B56-87D1372165C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0347A239-F824-47E7-9B56-87D1372165C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0347A239-F824-47E7-9B56-87D1372165C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0347A239-F824-47E7-9B56-87D1372165C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D77925-D0D3-4C78-90E3-E0C5849B631F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D77925-D0D3-4C78-90E3-E0C5849B631F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D77925-D0D3-4C78-90E3-E0C5849B631F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D77925-D0D3-4C78-90E3-E0C5849B631F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

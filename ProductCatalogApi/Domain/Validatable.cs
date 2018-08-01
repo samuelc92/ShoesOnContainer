@@ -1,7 +1,11 @@
-﻿namespace ProductCatalogApi.Domain
+﻿using Flunt.Notifications;
+using Flunt.Validations;
+
+namespace ProductCatalogApi.Domain
 {
-    public interface Validatable
+    
+    public abstract class Validatable : Notifiable, IValidatable
     {
-        
+        public abstract void Validate();
     }
 }

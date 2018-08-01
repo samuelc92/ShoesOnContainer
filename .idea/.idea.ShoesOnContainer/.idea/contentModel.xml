@@ -3,13 +3,100 @@
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_ShoesOnContainer.-111196100.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="ProductCatalogApi" t="IncludeRecursive">
+      <e p="CartApi" t="IncludeRecursive">
+        <e p="CartApi.csproj" t="IncludeRecursive" />
+        <e p="CartSettings.cs" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="CartController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Domain" t="Include">
+          <e p="Models" t="Include">
+            <e p="Cart.cs" t="Include" />
+            <e p="CartItem.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="ICartRepository.cs" t="Include" />
+            <e p="RedisCartRepository.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="ActionResults" t="Include">
+            <e p="InternalServerErrorObjectResult.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="CartDomainException.cs" t="Include" />
+          </e>
+          <e p="Filters" t="Include">
+            <e p="HttpGlobalExceptionFilter.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="CartApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="ProductCatalogApi" t="IncludeRecursive">
+        <e p="CatalogSettings.cs" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="CatalogController.cs" t="Include" />
+          <e p="PicController.cs" t="Include" />
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="CatalogContext.cs" t="Include" />
+          <e p="CatalogSend.cs" t="Include" />
+        </e>
+        <e p="Dockerfile" t="Include" />
+        <e p="Domain" t="Include">
+          <e p="Catalog" t="Include">
+            <e p="Commands" t="Include">
+              <e p="Create" t="Include">
+                <e p="Handler.cs" t="Include" />
+                <e p="Request.cs" t="Include" />
+              </e>
+              <e p="Delete" t="Include">
+                <e p="Handler.cs" t="Include" />
+                <e p="Request.cs" t="Include" />
+              </e>
+              <e p="Update" t="Include">
+                <e p="Handler.cs" t="Include" />
+                <e p="Request.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="CatalogBrand.cs" t="Include" />
+          <e p="CatalogItem.cs" t="Include" />
+          <e p="CatalogType.cs" t="Include" />
+          <e p="Result.cs" t="Include" />
+          <e p="Validatable.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20180711025245_InitialMigration.Designer.cs" t="Include" />
+          <e p="20180711025245_InitialMigration.cs" t="Include" />
+        </e>
+        <e p="Pipelines" t="Include">
+          <e p="ValidateCommand.cs" t="Include" />
         </e>
         <e p="ProductCatalogApi.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Startup.cs" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="PaginatedItemsViewModel.cs" t="Include" />
+        </e>
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -20,7 +107,24 @@
             </e>
           </e>
         </e>
-        <e p="wwwroot" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="Pics" t="Include">
+            <e p="shoes-1.png" t="Include" />
+            <e p="shoes-10.png" t="Include" />
+            <e p="shoes-11.png" t="Include" />
+            <e p="shoes-12.png" t="Include" />
+            <e p="shoes-13.png" t="Include" />
+            <e p="shoes-15.png" t="Include" />
+            <e p="shoes-2.png" t="Include" />
+            <e p="shoes-3.png" t="Include" />
+            <e p="shoes-4.png" t="Include" />
+            <e p="shoes-5.png" t="Include" />
+            <e p="shoes-6.png" t="Include" />
+            <e p="shoes-7.png" t="Include" />
+            <e p="shoes-8.png" t="Include" />
+            <e p="shoes-9.png" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="ShoesOnContainer.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
