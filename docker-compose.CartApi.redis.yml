@@ -1,0 +1,25 @@
+version: "3.2"
+
+
+
+networks:
+
+   backend:
+
+
+
+services:
+         
+   basket.data:
+
+      image: "redis"
+
+      ports:
+
+         - "6377:6379"
+
+
+
+      networks:
+
+         - backend

@@ -1,0 +1,55 @@
+version: "3.2"
+
+
+
+networks:
+
+   frontend:
+
+   backend:
+
+
+
+services:
+
+   cart:
+
+      build:
+
+         context: CartApi
+
+         dockerfile: Dockerfile
+
+      environment:
+
+         - ASPNETCORE_ENVIRONMENT=Development
+
+      container_name: cartapi
+
+      ports:
+
+         - "5001:80"
+
+      networks:
+
+         - backend
+
+         - frontend
+
+      depends_on:
+
+         - basket.data
+
+         
+
+   basket.data:
+
+      image: "redis"
+
+      ports:
+
+         - "6377:6379"
+
+      networks:
+
+         - backend
