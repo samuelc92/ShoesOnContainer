@@ -12,12 +12,12 @@ namespace CartApi.Controllers
     {
         private ICartRepository _repository;
 
-        private ILogger _logger;
+        // private ILogger _logger;
 
-        public CartController(ICartRepository repository, ILogger logger )
+        public CartController(ICartRepository repository )
         {
             this._repository = repository;
-            this._logger = logger;
+            // this._logger = logger;
         }
 
         [HttpGet("{id}")]
@@ -39,7 +39,7 @@ namespace CartApi.Controllers
         [HttpDelete("{id}")]
         public void Delete(string id)
         {
-            _logger.LogInformation("Delete method in Cart controller reached");
+            //_logger.LogInformation("Delete method in Cart controller reached");
             _repository.DeleteCartAsync(id);
         }
     }
