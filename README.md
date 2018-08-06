@@ -1,5 +1,5 @@
 # ShoesOnContainer
-This project is based in a course from Udemy that is called ASP.NET CORE 2.0 E-COMMERCE WEB SITE BASED ON MICROSERVICES. It uses microservices architecture and docker containers. 
+This project is based on a course from Udemy that is called ASP.NET CORE 2.0 E-COMMERCE WEB SITE BASED ON MICROSERVICES. It uses microservices architecture and docker containers. 
 
 ## Frameworks and/or libraries using
 
@@ -12,3 +12,4 @@ This project is based in a course from Udemy that is called ASP.NET CORE 2.0 E-C
 
 * SQL Server
 * Redis
+* MySQL
