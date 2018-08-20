@@ -9,6 +9,7 @@
           <e p="OrderController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="Domain" t="Include">
           <e p="Data" t="Include">
             <e p="Mapping" t="Include">
