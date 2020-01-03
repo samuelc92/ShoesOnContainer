@@ -5,6 +5,7 @@
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Domain\Rules\CatalogRules\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

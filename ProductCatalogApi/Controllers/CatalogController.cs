@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using ProductCatalogApi.Data;
 using ProductCatalogApi.Domain;
+using ProductCatalogApi.Domain.Rules.Abstraction;
 using ProductCatalogApi.ViewModels;
 
 namespace ProductCatalogApi.Controllers
@@ -112,6 +113,8 @@ namespace ProductCatalogApi.Controllers
             }
             if (catalogBrandId.HasValue)
             {
+                var ruleFactory = new RuleFactory();
+                var rule = ruleFactory.GetGetCatalogBrandById.SetId(catalogBrandId.Value);
                 root = root.Where(c => c.CatalogBrandId == catalogBrandId.Value);
             }
             var totalItems = await root
