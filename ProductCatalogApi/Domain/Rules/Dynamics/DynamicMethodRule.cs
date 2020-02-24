@@ -19,12 +19,15 @@ namespace ProductCatalogApi.Domain.Rules.Dynamics
 
         public override Expression<Func<T, bool>> IsSatisfiedBy()
         {
-            var parameter = Expression.Parameter(typeof(T), typeof(T).Name.ToLower().First().ToString());
-            var property = Expression.Property(parameter, _parameterName);
+            Expression parameter = Expression.Parameter(typeof(T), typeof(T).Name.ToLower().First().ToString());
+            var property = _parameterName.Split('.')
+                                        .Aggregate(parameter, (leftProperty, rightProperty) => 
+                                         Expression.Property(leftProperty, rightProperty));
+            //var property = Expression.Property(parameter, _parameterName);
             var constant = Expression.Convert(Expression.Constant(_constantValue), property.Type);
             var methodInfo = typeof(string).GetMethod(_methodName, new[] { constant.Type });
             var body = Expression.Call(property, methodInfo, constant);
-            return Expression.Lambda<Func<T, bool>>(body, parameter);
+            return Expression.Lambda<Func<T, bool>>(body, (ParameterExpression)parameter);
         }
     }
 }
